@@ -3,7 +3,7 @@ def record_spell(spell_name: str, ingredients: str) -> str:
     # This delays the import until the function is actually called,
     # by which point both modules are fully loaded
     from .validator import validate_ingredients
-    
+
     result = validate_ingredients(ingredients)
     if "VALID" in result:
         return f"Spell recorded: {spell_name} ({result})"
