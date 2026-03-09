@@ -16,4 +16,6 @@ if __name__ == "__main__":
     print(f"alchemy.transmutation.lead_to_gold(): \
 {alchemy.transmutation.lead_to_gold()}")
     print(f"alchemy.transmutation.philosophers_stone(): \
-{alchemy.transmutation.philosophers_stone()}")
+{alchemy.transmutation.philosophers_stone()}\n")
+
+    print("Both pathways work! Absolute: clear, Relative: concise")

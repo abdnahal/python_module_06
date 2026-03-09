@@ -20,5 +20,11 @@ if __name__ == "__main__":
     print(f"record_spell('Lightning', 'air'): \
 {record_spell("Lightning", "air")}\n")
 
-    print("Circular dependency curse avoided using late imports!")
+    print("Testing Dependency injection technique:")
+    from alchemy.grimoire import record_spell2, validate_ingredients
+    print(f"record_spell('Lightning', 'air'): \
+{record_spell2("Lightning", "air", validate_ingredients)}\n")
+
+    print("Circular dependency curse avoided using late \
+imports and Dependency injection!")
     print("All spells processed safely!")
